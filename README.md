@@ -18,8 +18,8 @@ A complete end-to-end data analysis project focused on Indian domestic airline f
 | Folder      | Description                                                   |
 |-------------|---------------------------------------------------------------|
 | `data/`     | Contains the cleaned dataset (`cleaned_airline_data.csv`)     |
-| `eda/`      | Python notebook + Markdown summary of EDA                     |
-| `sql/`      | Table schema + 12 analysis queries in MySQL                   |
+| `python/`   | Python notebook + Markdown summary of EDA                     |
+| `sql/`      | Table schema + analysis queries in MySQL                   |
 | `powerbi/`  | Power BI dashboard file (`.pbix`) and optional screenshots    |
 
 ---
