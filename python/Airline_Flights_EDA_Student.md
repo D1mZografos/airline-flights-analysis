@@ -1,0 +1,103 @@
+
+# ✈️ Airline Flights EDA Project
+
+This project explores a large dataset of domestic airline flights in India. The goal is to analyze factors that affect flight prices, such as airline, class, route, booking time, and more.
+
+---
+
+## 📁 Dataset Summary
+
+- **Total records**: 300,153
+- **Columns after cleaning**: 16
+- Includes information like:
+  - Airline name
+  - Source and destination cities
+  - Departure and arrival times
+  - Class (Economy/Business)
+  - Stops, duration, price, and days left to flight
+- I also created some new features like:
+  - `route` (source → destination)
+  - `booking_urgency` (based on days_left)
+  - `duration_category` (short, medium, long-haul)
+
+---
+
+## 📊 Univariate Analysis
+
+### ✈️ Airlines
+- Most flights in the dataset are from **Vistara** and **Air India**.
+- **Indigo**, **SpiceJet**, and **AirAsia** appear less frequently.
+
+### 🏙️ Cities
+- Top source/destination cities: **Delhi**, **Mumbai**, **Bangalore**.
+
+### ⏰ Time of Day
+- Most flights depart in the **Morning**, followed by **Early Morning** and **Evening**.
+- **Night** is the most common arrival time.
+
+### 🛫 Stops
+- Majority of flights have **1 stop**.
+- A smaller number are non-stop or have 2+ stops.
+
+### 💼 Class
+- About 70% of the tickets are Economy, and 30% Business.
+
+### 💰 Price
+- Skewed to the right.
+- Most prices are under ₹40,000, but there are some extreme outliers over 100,000.
+
+---
+
+## 🔁 Bivariate Analysis
+
+### 💸 Price by Airline
+- **Vistara** and **Air India** charge the highest average fares.
+- **Indigo** and **SpiceJet** have the lowest prices.
+
+### 💼 Price by Class
+- Business class is much more expensive than Economy (as expected).
+- Price variation is also greater in Business.
+
+### 🕒 Price by Time
+- Flights at **Night** or **Evening** tend to be more expensive.
+- **Late night** departures are cheapest on average.
+
+### 📅 Booking Urgency
+- **Last-minute bookings (0–3 days)** have the highest prices.
+- Booking in advance (30–60 days) is generally cheaper.
+
+---
+
+## ⏳ Duration Analysis
+
+- **Air India** and **SpiceJet** have longer durations.
+- **Indigo** offers shorter flights on average.
+- Flights with more stops also tend to have longer durations.
+- Evening or Night departures are usually longer.
+
+---
+
+## 🔁 Multivariate Insights
+
+### 📈 Price vs Duration (colored by Class)
+- Business class tickets are expensive no matter the duration.
+- For Economy, prices rise slowly with trip duration.
+
+### 📊 Correlation Matrix
+- Duration and Price: weak positive correlation (0.20)
+- Stops and Duration: moderate correlation (0.38)
+- Days Left and Price: weak negative (last-minute = higher price)
+
+### 🛬 Expensive Routes
+- Chennai ↔ Bangalore and Kolkata ↔ Chennai are some of the most expensive routes on average.
+
+### 🔥 Most Frequent Routes
+- Delhi ↔ Mumbai, Mumbai ↔ Bangalore, and Delhi ↔ Kolkata are among the busiest.
+
+---
+
+## ✅ Conclusions
+
+- Business class and last-minute bookings drive up prices.
+- Airline choice and flight duration also affect cost.
+- Frequent routes show distinct pricing behaviors.
