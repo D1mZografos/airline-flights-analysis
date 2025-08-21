@@ -63,14 +63,6 @@ GROUP BY stops
 ORDER BY avg_price DESC;
 ```
 
----
-
-## 📸 Recommended Images for GitHub
-
-Add screenshots of the following query results to the `images/` folder:
-
-- `avg_price_airline.png`
-- `booking_urgency_price.png`
 - `top_routes.png`
 - `price_by_stops.png`
 
