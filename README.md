@@ -1,72 +1,28 @@
-# ✈️ Airline Flights Analysis Project
+## 📌 Project Summary
 
-A complete end-to-end data analysis project focused on Indian domestic airline flights. This project covers data cleaning, exploratory data analysis (EDA), SQL queries for deeper insights, and visualization through Power BI.
+This project analyzes commercial flight booking data to uncover insights into airline pricing strategies, customer behavior, and route performance. Using Python for exploratory data analysis (EDA), SQL for deeper querying, and Power BI for dashboard creation, this end-to-end workflow showcases how data can be transformed into business value.
 
----
+### 🎯 Business Problem
+Airlines face constant pressure to optimize pricing, maximize occupancy, and tailor services to customer behavior. Poor visibility into booking trends and pricing patterns can result in missed revenue and inefficient route planning.
 
-## 📊 Project Objectives
+### 💡 Project Goals
+- Understand pricing variation across airlines, classes, routes, and booking timing
+- Identify the most frequent and potentially profitable routes
+- Analyze how flight duration and number of stops impact ticket prices
+- Enable data-driven decisions for pricing, route allocation, and customer targeting
 
-- Understand how flight attributes affect ticket prices
-- Identify trends by airline, class, route, and booking behavior
-- Practice SQL query writing and Power BI dashboarding
-- Showcase skills in Python, SQL, Azure, and BI tools
+### 🧰 Tools & Technologies
+- **Python**: Data cleaning, feature engineering, visual EDA
+- **SQL**: Business queries and aggregation logic
+- **Power BI**: Interactive dashboards and storytelling
 
----
+### 🔍 Key Skills Demonstrated
+- End-to-end data pipeline from raw CSV to dashboard
+- SQL query design with business context
+- Data visualization and storytelling using Power BI
+- GitHub project organization for public portfolios
 
-## 📁 Project Structure
-
-| Folder      | Description                                                   |
-|-------------|---------------------------------------------------------------|
-| `data/`     | Contains the cleaned dataset (`cleaned_airline_data.csv`)     |
-| `python/`   | Python notebook + Markdown summary of EDA                     |
-| `sql/`      | Table schema + analysis queries in MySQL                   |
-| `powerbi/`  | Power BI dashboard file (`.pbix`) and optional screenshots    |
-
----
-
-## 🔍 Key Insights from EDA
-
-- **Business class** flights are 4–5× more expensive than Economy
-- **Vistara** and **Air India** are the most expensive airlines
-- **Last-minute bookings (0–3 days)** have the highest average prices
-- Most flights are from **Delhi**, **Mumbai**, and **Bangalore**
-- **Evening and Night** flights are generally more expensive
-- Top route by frequency: **Delhi ↔ Mumbai**
+### 📈 Outcome
+The project reveals clear patterns in ticket pricing based on class, route, urgency, and number of stops. It supports decisions such as adjusting prices for high-demand routes, encouraging early bookings, and optimizing seat class availability.
 
 ---
-
-## 🧰 Tools Used
-
-- **Python** (Pandas, Matplotlib, Seaborn)
-- **MySQL** for querying
-- **Power BI** for dashboarding
-
----
-
-## 🚀 How to Use
-
-1. Clone this repo
-2. Load `data/cleaned_airline_data.csv` into MySQL
-3. Run SQL queries from `sql/airline_flight_queries.sql`
-4. Open Power BI and connect to SQL or CSV file
-5. Explore interactive dashboards
-
----
-
-## 🧠 What I Learned
-
-- How to perform real-world EDA and feature engineering
-- Writing optimized SQL queries for analysis
-- Uploading data to cloud and visualizing with BI tools
-- Structuring a portfolio-ready data project
-
----
-
-## ✅ Future Work
-
-- Host dashboard publicly (Power BI Service)
-- Add prediction model for flight prices (ML)
-
----
-
-📬 Feel free to fork, explore, or reach out for collaboration!
