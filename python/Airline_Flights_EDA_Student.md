@@ -1,103 +1,55 @@
+# ✈️ Airline Flights - Python Exploratory Data Analysis (EDA)
 
-# ✈️ Airline Flights EDA Project
-
-This project explores a large dataset of domestic airline flights in India. The goal is to analyze factors that affect flight prices, such as airline, class, route, booking time, and more.
-
----
-
-## 📁 Dataset Summary
-
-- **Total records**: 300,153
-- **Columns after cleaning**: 16
-- Includes information like:
-  - Airline name
-  - Source and destination cities
-  - Departure and arrival times
-  - Class (Economy/Business)
-  - Stops, duration, price, and days left to flight
-- I also created some new features like:
-  - `route` (source → destination)
-  - `booking_urgency` (based on days_left)
-  - `duration_category` (short, medium, long-haul)
+This notebook explores commercial flight data to uncover patterns in pricing, routes, and booking behavior. The goal is to prepare clean data for SQL and dashboard analysis, while also gaining early business insights.
 
 ---
 
-## 📊 Univariate Analysis
+## 🧠 Business Context
 
-### ✈️ Airlines
-- Most flights in the dataset are from **Vistara** and **Air India**.
-- **Indigo**, **SpiceJet**, and **AirAsia** appear less frequently.
-
-### 🏙️ Cities
-- Top source/destination cities: **Delhi**, **Mumbai**, **Bangalore**.
-
-### ⏰ Time of Day
-- Most flights depart in the **Morning**, followed by **Early Morning** and **Evening**.
-- **Night** is the most common arrival time.
-
-### 🛫 Stops
-- Majority of flights have **1 stop**.
-- A smaller number are non-stop or have 2+ stops.
-
-### 💼 Class
-- About 70% of the tickets are Economy, and 30% Business.
-
-### 💰 Price
-- Skewed to the right.
-- Most prices are under ₹40,000, but there are some extreme outliers over 100,000.
+The Python EDA lays the groundwork for answering key business questions about airline performance. It focuses on features that influence pricing, booking urgency, and class preferences. Insights from this stage help shape the SQL queries and Power BI dashboards used later in the project.
 
 ---
 
-## 🔁 Bivariate Analysis
+## 🔍 EDA Goals
 
-### 💸 Price by Airline
-- **Vistara** and **Air India** charge the highest average fares.
-- **Indigo** and **SpiceJet** have the lowest prices.
-
-### 💼 Price by Class
-- Business class is much more expensive than Economy (as expected).
-- Price variation is also greater in Business.
-
-### 🕒 Price by Time
-- Flights at **Night** or **Evening** tend to be more expensive.
-- **Late night** departures are cheapest on average.
-
-### 📅 Booking Urgency
-- **Last-minute bookings (0–3 days)** have the highest prices.
-- Booking in advance (30–60 days) is generally cheaper.
+- Separate and explore categorical and numerical features
+- Understand price distribution and variation
+- Analyze booking urgency and its effect on pricing
+- Visualize how class, stops, and route influence flight characteristics
 
 ---
 
-## ⏳ Duration Analysis
+## 📊 Techniques Used
 
-- **Air India** and **SpiceJet** have longer durations.
-- **Indigo** offers shorter flights on average.
-- Flights with more stops also tend to have longer durations.
-- Evening or Night departures are usually longer.
-
----
-
-## 🔁 Multivariate Insights
-
-### 📈 Price vs Duration (colored by Class)
-- Business class tickets are expensive no matter the duration.
-- For Economy, prices rise slowly with trip duration.
-
-### 📊 Correlation Matrix
-- Duration and Price: weak positive correlation (0.20)
-- Stops and Duration: moderate correlation (0.38)
-- Days Left and Price: weak negative (last-minute = higher price)
-
-### 🛬 Expensive Routes
-- Chennai ↔ Bangalore and Kolkata ↔ Chennai are some of the most expensive routes on average.
-
-### 🔥 Most Frequent Routes
-- Delhi ↔ Mumbai, Mumbai ↔ Bangalore, and Delhi ↔ Kolkata are among the busiest.
+- Univariate and bivariate analysis
+- Visualizations with seaborn & matplotlib
+- Feature engineering (e.g., `booking_urgency`, `duration_category`, `route`)
+- Outlier inspection and column transformation
 
 ---
 
-## ✅ Conclusions
+## 🧹 Output
 
-- Business class and last-minute bookings drive up prices.
-- Airline choice and flight duration also affect cost.
-- Frequent routes show distinct pricing behaviors.
+- Cleaned dataset (`cleaned_airline_data.csv`)
+- Summary statistics and visual plots
+- Insights to inform SQL and Power BI analysis
+
+---
+
+## 🔄 Project Workflow
+
+```mermaid
+graph LR
+  A[Raw CSV] --> B[Python EDA & Cleaning]
+  B --> C[Cleaned CSV]
+  C --> D[SQL Analysis]
+  C --> E[Power BI Dashboard]
+```
+
+---
+
+## ✅ Next Steps
+
+- Load `cleaned_airline_data.csv` into MySQL
+- Write SQL queries to analyze pricing, routes, and demand
+- Visualize results in Power BI dashboards
