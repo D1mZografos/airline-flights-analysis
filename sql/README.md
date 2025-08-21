@@ -12,7 +12,7 @@ To answer key business questions using SQL queries that support strategic decisi
 
 ## 📁 Folder Contents
 
-- `airline_flight_analysis_queries.sql`: Full list of SQL queries with comments
+- `scripts/`: Full list of SQL scripts about database, schema and queries
 - `images/`: Screenshots of selected query results and visual outputs
 - `README.md`: This documentation file
 
