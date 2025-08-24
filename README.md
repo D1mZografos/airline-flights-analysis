@@ -1,3 +1,9 @@
+# 🧭 Airline Flights Analysis Project
+
+This end-to-end project analyzes commercial airline flight booking data to help airlines improve pricing, planning, and customer engagement strategies. It uses Python for data wrangling and exploration, SQL for querying structured data, and Power BI for interactive dashboards — forming a complete data analysis pipeline.
+
+---
+
 ## 📌 Project Summary
 
 This project analyzes commercial flight booking data to uncover insights into airline pricing strategies, customer behavior, and route performance. Using Python for exploratory data analysis (EDA), SQL for deeper querying, and Power BI for dashboard creation, this end-to-end workflow showcases how data can be transformed into business value.
@@ -11,18 +17,87 @@ Airlines face constant pressure to optimize pricing, maximize occupancy, and tai
 - Analyze how flight duration and number of stops impact ticket prices
 - Enable data-driven decisions for pricing, route allocation, and customer targeting
 
-### 🧰 Tools & Technologies
-- **Python**: Data cleaning, feature engineering, visual EDA
-- **SQL**: Business queries and aggregation logic
-- **Power BI**: Interactive dashboards and storytelling
+---
 
-### 🔍 Key Skills Demonstrated
-- End-to-end data pipeline from raw CSV to dashboard
-- SQL query design with business context
-- Data visualization and storytelling using Power BI
-- GitHub project organization for public portfolios
+## 📚 Data Overview
 
-### 📈 Outcome
-The project reveals clear patterns in ticket pricing based on class, route, urgency, and number of stops. It supports decisions such as adjusting prices for high-demand routes, encouraging early bookings, and optimizing seat class availability.
+### 📥 Source
+All data is sourced from Kaggle: [Airline Dataset on Kaggle](https://www.kaggle.com/datasets/shubhendra7/airline-dataset).
+
+### 📄 Description
+The dataset contains commercial flight bookings including pricing, timing, airline, stops, and customer options.
+
+### 📌 Key Columns
+
+| Column              | Description |
+|---------------------|-------------|
+| `airline`           | Airline name |
+| `source_city`       | City of departure |
+| `departure_time`    | Scheduled departure time category (e.g., Morning, Evening) |
+| `stops`             | Number of stops as text (e.g., "non-stop", "1 stop") |
+| `arrival_time`      | Scheduled arrival time category |
+| `destination_city`  | Destination city |
+| `class`             | Ticket class ("Economy", "Business") |
+| `duration`          | Flight duration in minutes |
+| `days_left`         | Days left from booking to departure |
+| `price`             | Ticket price in currency units |
+| `stops_num`         | Numeric version of stops |
+| `booking_urgency`   | Categorized urgency based on days left |
+| `duration_category` | Grouped flight duration category |
+| `route`             | Combination of source and destination city |
 
 ---
+
+## 🧰 Tools & Technologies
+
+- 🐍 **Python**: pandas, matplotlib, seaborn, numpy
+- 🧾 **SQL**: MySQL (analytical queries)
+- 📊 **Power BI**: Reports and dashboards for stakeholder consumption
+- 📁 **GitHub**: Repository for code and documentation
+
+---
+
+## 🧪 Workflow Overview
+
+```mermaid
+graph LR
+  A[Raw CSV] --> B[Python: EDA & Cleaning]
+  B --> C[Cleaned Dataset]
+  C --> D[SQL: Business Queries]
+  C --> E[Power BI Dashboards]
+```
+
+---
+
+## 📊 Visualizations & Deliverables
+
+### 🔹 Python EDA (Notebooks & Plots)
+- Univariate & bivariate plots
+- Pricing distribution and urgency insights
+- Class, stops, and route-based behavior
+
+### 🔹 SQL Analysis
+- Average price by airline/class/stops
+- Most frequent and profitable routes
+- Booking urgency vs pricing
+- Route-specific analysis
+
+### 🔹 Power BI Dashboards
+- Pricing dashboard by class and airline
+- Booking behavior and urgency visuals
+- Route and destination performance
+- Filters and interactivity
+
+---
+
+## ✅ Key Outcomes
+
+- Identified top-performing and underperforming routes
+- Found strong relationship between booking urgency and price
+- Visualized pricing trends across class and airlines
+- Supported revenue-optimizing decisions with clean visuals
+
+---
+
+## 👨‍💻 Author
+*This project was created as a portfolio piece to demonstrate skills in full-cycle data analysis and visualization.*
