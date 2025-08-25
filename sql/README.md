@@ -71,7 +71,7 @@ FROM flights
 GROUP BY stops
 ORDER BY avg_price DESC;
 ```
-![price_by_stops](../sql/images/price_by__stops.png)
+![price_by_stops](../sql/images/price__by_stops.png)
 
 ---
 
