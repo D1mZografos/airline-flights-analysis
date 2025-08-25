@@ -28,6 +28,19 @@ The Python EDA lays the groundwork for answering key business questions about ai
 
 ---
 
+## 📸 Visual Examples
+
+### Booking Urgency vs Price
+![booking_urgency_vs_price](../python/images/booking_urgency_vs_price.png)
+
+### Class Distribution
+![class_distribution](../python/images/class_distribution.png)
+
+### Top Routes by Frequency
+![top_routes](../python/images/top_routes.png)
+
+---
+
 ## 🧹 Output
 
 - Cleaned dataset (`cleaned_airline_data.csv`)
