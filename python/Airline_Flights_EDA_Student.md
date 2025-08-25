@@ -50,6 +50,6 @@ graph LR
 
 ## ✅ Next Steps
 
-- Load `cleaned_airline_data.csv` into MySQL
+- Load `airline_flights_cleaned.csv` into MySQL
 - Write SQL queries to analyze pricing, routes, and demand
 - Visualize results in Power BI dashboards
