@@ -45,7 +45,7 @@ The Python EDA lays the groundwork for answering key business questions about ai
 
 - Cleaned dataset (`cleaned_airline_data.csv`)
 - Summary statistics and visual plots
-- Insights to inform SQL and Power BI analysis
+- Insights to inform SQL analysis
 
 ---
 
