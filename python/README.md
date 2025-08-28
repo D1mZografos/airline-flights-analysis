@@ -6,7 +6,7 @@ This notebook explores commercial flight data to uncover patterns in pricing, ro
 
 ## 🧠 Business Context
 
-The Python EDA lays the groundwork for answering key business questions about airline performance. It focuses on features that influence pricing, booking urgency, and class preferences. Insights from this stage help shape the SQL queries and Power BI dashboards used later in the project.
+The Python EDA lays the groundwork for answering key business questions about airline performance. It focuses on features that influence pricing, booking urgency, and class preferences. Insights from this stage help shape the SQL queries used later in the project.
 
 ---
 
@@ -56,7 +56,6 @@ graph LR
   A[Raw CSV] --> B[Python EDA & Cleaning]
   B --> C[Cleaned CSV]
   C --> D[SQL Analysis]
-  C --> E[Power BI Dashboard]
 ```
 
 ---
@@ -65,4 +64,3 @@ graph LR
 
 - Load `airline_flights_cleaned.csv` into MySQL
 - Write SQL queries to analyze pricing, routes, and demand
-- Visualize results in Power BI dashboards
