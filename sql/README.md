@@ -77,4 +77,4 @@ ORDER BY avg_price DESC;
 
 ## ✅ Summary
 
-These SQL queries helped uncover pricing insights, booking behavior patterns, and route efficiency, which supported the Power BI dashboard design and business recommendations.
+These SQL queries helped uncover pricing insights, booking behavior patterns, and route efficiency.
