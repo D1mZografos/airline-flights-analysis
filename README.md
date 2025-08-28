@@ -52,7 +52,6 @@ The dataset contains commercial flight bookings including pricing, timing, airli
 
 - 🐍 **Python**: pandas, matplotlib, seaborn, numpy
 - 🧾 **SQL**: MySQL (analytical queries)
-- 📊 **Power BI**: Reports and dashboards for stakeholder consumption
 - 📁 **GitHub**: Repository for code and documentation
 
 ---
@@ -64,7 +63,6 @@ graph LR
   A[Raw CSV] --> B[Python: EDA & Cleaning]
   B --> C[Cleaned Dataset]
   C --> D[SQL: Business Queries]
-  C --> E[Power BI Dashboards]
 ```
 
 ---
@@ -82,11 +80,6 @@ graph LR
 - Booking urgency vs pricing
 - Route-specific analysis
 
-### 🔹 Power BI Dashboards
-- Pricing dashboard by class and airline
-- Booking behavior and urgency visuals
-- Route and destination performance
-- Filters and interactivity
 
 ---
 
