@@ -1,12 +1,12 @@
 # 🧭 Airline Flights Analysis Project
 
-This end-to-end project analyzes commercial airline flight booking data to help airlines improve pricing, planning, and customer engagement strategies. It uses Python for data wrangling and exploration, SQL for querying structured data, and Power BI for interactive dashboards — forming a complete data analysis pipeline.
+This end-to-end project analyzes commercial airline flight booking data to help airlines improve pricing, planning, and customer engagement strategies. It uses Python for data wrangling and exploration and SQL for querying structured data — forming a complete data analysis pipeline.
 
 ---
 
 ## 📌 Project Summary
 
-This project analyzes commercial flight booking data to uncover insights into airline pricing strategies, customer behavior, and route performance. Using Python for exploratory data analysis (EDA), SQL for deeper querying, and Power BI for dashboard creation, this end-to-end workflow showcases how data can be transformed into business value.
+This project analyzes commercial flight booking data to uncover insights into airline pricing strategies, customer behavior, and route performance. Using Python for exploratory data analysis (EDA) and SQL for deeper querying, this workflow showcases how data can be transformed into business value.
 
 ### 🎯 Business Problem
 Airlines face constant pressure to optimize pricing, maximize occupancy, and tailor services to customer behavior. Poor visibility into booking trends and pricing patterns can result in missed revenue and inefficient route planning.
@@ -79,7 +79,6 @@ graph LR
 - Most frequent and profitable routes
 - Booking urgency vs pricing
 - Route-specific analysis
-
 
 ---
 
