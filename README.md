@@ -81,6 +81,8 @@ graph LR
 - Booking urgency vs pricing
 - Route-specific analysis
 
+📁 See [`sql/README.md`](sql/README.md) for query details and screenshots.
+
 ---
 
 ## ✅ Key Outcomes
