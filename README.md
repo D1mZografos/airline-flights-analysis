@@ -52,7 +52,6 @@ The dataset contains commercial flight bookings including pricing, timing, airli
 
 - 🐍 **Python**: pandas, matplotlib, seaborn, numpy
 - 🧾 **SQL**: MySQL (analytical queries)
-- 📁 **GitHub**: Repository for code and documentation
 
 ---
 
