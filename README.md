@@ -73,6 +73,8 @@ graph LR
 - Pricing distribution and urgency insights
 - Class, stops, and route-based behavior
 
+📁 See [`python/README.md`](python/README.md) for visual outputs and full analysis.
+
 ### 🔹 SQL Analysis
 - Average price by airline/class/stops
 - Most frequent and profitable routes
